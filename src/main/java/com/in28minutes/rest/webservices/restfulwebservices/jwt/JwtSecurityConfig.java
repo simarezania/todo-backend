@@ -1,4 +1,4 @@
-/*package com.in28minutes.rest.webservices.restfulwebservices.jwt;
+package com.in28minutes.rest.webservices.restfulwebservices.jwt;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
@@ -77,8 +77,8 @@ public class JwtSecurityConfig {
 
     @Bean
     public UserDetailsService userDetailsService() {
-        UserDetails user = User.withUsername("in28minutes")
-                .password("{noop}dummy")
+        UserDetails user = User.withUsername("sima")
+                .password("{noop}123")
                 .authorities("read")
                 .roles("USER")
                 .build();
@@ -131,4 +131,3 @@ public class JwtSecurityConfig {
 
 }
 
- */

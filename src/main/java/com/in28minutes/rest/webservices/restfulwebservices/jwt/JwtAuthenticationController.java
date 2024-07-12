@@ -1,4 +1,4 @@
-/*package com.in28minutes.rest.webservices.restfulwebservices.jwt;
+package com.in28minutes.rest.webservices.restfulwebservices.jwt;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-//@RestController
+@RestController
 public class JwtAuthenticationController {
 
     private final JwtTokenService tokenService;
@@ -20,7 +20,7 @@ public class JwtAuthenticationController {
         this.authenticationManager = authenticationManager;
     }
 
-    //@PostMapping("/authenticate")
+    @PostMapping("/authenticate")
     public ResponseEntity<JwtTokenResponse> generateToken(
             @RequestBody JwtTokenRequest jwtTokenRequest) {
 
@@ -37,4 +37,4 @@ public class JwtAuthenticationController {
         return ResponseEntity.ok(new JwtTokenResponse(token));
     }
 }
-*/
+
